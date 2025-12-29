@@ -37,7 +37,7 @@ Lataa käyttöjärjestelmällesi sopiva asennuspaketti [Releases-sivulta](https:
 | Käyttöjärjestelmä | Tiedosto | Kuvaus |
 |-------------------|----------|--------|
 | 🪟 **Windows** | `Tilitin-X.X.X-Setup.exe` | Sisältää Javan, ei vaadi asennuksia |
-| 🍎 **macOS (M1/M2/M3)** | `Tilitin-X.X.X-arm64.dmg` | Sisältää Javan, ei vaadi asennuksia |
+| 🍎 **macOS (Apple Silicon)** | `Tilitin-X.X.X-arm64.dmg` | M1/M2/M3/M4 - Sisältää Javan |
 | 🍎 **macOS (Intel)** | `Tilitin-X.X.X.dmg` | Sisältää Javan, ei vaadi asennuksia |
 | 🐧 **Ubuntu/Debian** | `tilitin_X.X.X-1_amd64.deb` | Sisältää Javan, ei vaadi asennuksia |
 | 🐧 **Fedora/Red Hat** | `tilitin-X.X.X-1.x86_64.rpm` | Sisältää Javan, ei vaadi asennuksia |
