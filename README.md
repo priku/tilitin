@@ -1,4 +1,4 @@
-# Tilitin - Yhdistetty versio v1.6.0
+# Tilitin - Yhdistetty versio v1.6.1
 
 Tilitin on ilmainen kirjanpito-ohjelma suomalaisille yrityksille ja yhdistyksille. Tämä on **yhdistetty versio**, joka sisältää parhaat ominaisuudet eri kehittäjien versioista.
 
@@ -37,10 +37,13 @@ Lataa käyttöjärjestelmällesi sopiva asennuspaketti [Releases-sivulta](https:
 | Käyttöjärjestelmä | Tiedosto | Kuvaus |
 |-------------------|----------|--------|
 | 🪟 **Windows** | `Tilitin-X.X.X-Setup.exe` | Asennusohjelma (suositeltu) |
-| 🍎 **macOS** | `Tilitin-X.X.X.dmg` | DMG-levykuva |
+| 🍎 **macOS (M1/M2/M3)** | `Tilitin-X.X.X-arm64.dmg` | DMG Apple Silicon (ARM) |
+| 🍎 **macOS (Intel)** | `Tilitin-X.X.X.dmg` | DMG Intel x86_64 |
 | 🐧 **Ubuntu/Debian** | `tilitin_X.X.X-1_amd64.deb` | DEB-paketti |
 | 🐧 **Fedora/Red Hat** | `tilitin-X.X.X-1.x86_64.rpm` | RPM-paketti |
 | ☕ **Kaikki (JAR)** | `tilitin-X.X.X-priku.1.jar` | Vaatii Java 21+ |
+
+**macOS-käyttäjille:** Jos DMG ei toimi, käytä JAR-versiota - se on alustariippumaton ja toimii varmasti.
 
 ### Asennus JAR-tiedostosta
 

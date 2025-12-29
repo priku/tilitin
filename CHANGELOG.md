@@ -1,5 +1,22 @@
 # Muutosloki - Tilitin Priku
 
+## [1.6.1] - 2025-12-29
+
+### 🔧 Korjaukset
+
+#### macOS-tuki
+- **ARM Mac -DMG**: Erillinen `.dmg` Apple Silicon -Maceille (M1/M2/M3)
+- **Intel Mac -DMG**: Erillinen `.dmg` Intel-Maceille
+- **GitHub Actions**: Rakentaa molemmat DMG-versiot automaattisesti
+  - `macos-13` runner Intel-versiolle
+  - `macos-14` runner ARM-versiolle
+
+### 📝 Dokumentaatio
+- Päivitetty README.md selventämään macOS DMG -vaihtoehdot
+- Päivitetty release notes -malli sisältämään molemmat DMG-versiot
+
+---
+
 ## [1.6.0] - 2025-12-29
 
 ### 🆕 Uudet ominaisuudet

@@ -80,10 +80,13 @@ jobs:
         | Käyttöjärjestelmä | Tiedosto |
         |-------------------|----------|
         | 🪟 Windows | \`Tilitin-$VERSION-Setup.exe\` |
-        | 🍎 macOS | \`Tilitin-$VERSION.dmg\` |
+        | 🍎 macOS (M1/M2/M3) | \`Tilitin-$VERSION-arm64.dmg\` |
+        | 🍎 macOS (Intel) | \`Tilitin-$VERSION.dmg\` |
         | 🐧 Linux (Debian/Ubuntu) | \`tilitin_$VERSION-1_amd64.deb\` |
         | 🐧 Linux (Red Hat/Fedora) | \`tilitin-$VERSION-1.x86_64.rpm\` |
         | ☕ Cross-platform JAR | \`tilitin-$VERSION-priku.1.jar\` |
+        
+        **macOS-käyttäjille:** Lataa oikea versio prosessorillesi. Jos DMG ei toimi, käytä JAR-versiota.
         
         Katso täysi muutosloki: [CHANGELOG.md](https://github.com/priku/tilitin/blob/master/CHANGELOG.md)
         EOF
@@ -239,12 +242,21 @@ jobs:
           dist/installer/*.exe
 
   # =============================================================================
-  # Job 4: macOS package (.dmg)
+  # Job 4: macOS packages (.dmg) - Intel and ARM
   # =============================================================================
   macos-package:
     name: 🍎 macOS Package
-    runs-on: macos-latest
+    runs-on: ${{ matrix.runner }}
     needs: build-and-release
+    strategy:
+      matrix:
+        include:
+          - runner: macos-13  # Intel x86_64
+            arch: x64
+            suffix: intel
+          - runner: macos-14  # Apple Silicon ARM64
+            arch: aarch64
+            suffix: arm64
 
     steps:
     - name: Checkout code
@@ -267,8 +279,9 @@ jobs:
         VERSION="${{ needs.build-and-release.outputs.version }}"
         JAR_FILE=$(ls target/tilitin*.jar | head -1)
         
-        echo "Building macOS DMG for version $VERSION"
+        echo "Building macOS DMG for version $VERSION (${{ matrix.arch }})"
         echo "Using JAR: $JAR_FILE"
+        echo "Runner: ${{ matrix.runner }}"
         
         jpackage \
           --input target \
@@ -281,7 +294,14 @@ jobs:
           --mac-package-name "Tilitin" \
           --dest dist/
         
-        echo "✅ macOS DMG created"
+        # Rename DMG to include architecture
+        DMG_FILE=$(ls dist/*.dmg)
+        DMG_BASENAME=$(basename "$DMG_FILE" .dmg)
+        if [ "${{ matrix.suffix }}" != "intel" ]; then
+          mv "$DMG_FILE" "dist/${DMG_BASENAME}-${{ matrix.suffix }}.dmg"
+        fi
+        
+        echo "✅ macOS DMG created for ${{ matrix.arch }}"
         ls -lh dist/*.dmg
 
     - name: Upload macOS package to release
