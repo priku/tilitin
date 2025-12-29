@@ -55,18 +55,18 @@ public class Kirjanpito implements Runnable {
 
 		configureLogging(settings.getDirectoryPath());
 		Thread.setDefaultUncaughtExceptionHandler(new ExceptionHandler());
+		
+		try {
+			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+		
 		String osName = System.getProperty("os.name").toLowerCase();
 
-		if (osName.startsWith("mac os x")) {
-			System.setProperty("apple.laf.useScreenMenuBar", "true");
-			System.setProperty("com.apple.mrj.application.apple.menu.about.name", APP_NAME);
-
-			try {
-				UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-			}
-			catch (Exception e) {
-				e.printStackTrace();
-			}
+		if (osName.startsWith("mac")) {
+			// No additional settings needed here, already set in main()
 		}
 		else if (osName.startsWith("linux")) {
 			try {
@@ -160,6 +160,16 @@ public class Kirjanpito implements Runnable {
 	}
 
 	public static void main(String[] args) {
+		// Set macOS-specific properties BEFORE any AWT/Swing initialization
+		String osName = System.getProperty("os.name").toLowerCase();
+		if (osName.startsWith("mac")) {
+			System.setProperty("apple.laf.useScreenMenuBar", "true");
+			System.setProperty("apple.awt.application.name", APP_NAME);
+			System.setProperty("com.apple.mrj.application.apple.menu.about.name", APP_NAME);
+			// Disable App Nap to prevent UI freezing
+			System.setProperty("apple.awt.UIElement", "false");
+		}
+		
 		Kirjanpito p = new Kirjanpito();
 		boolean invalid = false;
 

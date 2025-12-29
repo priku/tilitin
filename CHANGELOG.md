@@ -5,15 +5,19 @@
 ### 🔧 Korjaukset
 
 #### macOS-tuki
+- **Korjattu: Valikot eivät toimineet macOS:ssä** - Siirretty system properties asetus ennen AWT/Swing-initialisointia
+- **Korjattu: Tilikarttamallivalikko ei auennut** - Lisätty macOS-spesifiset JVM-optiot
 - **ARM Mac -DMG**: Erillinen `.dmg` Apple Silicon -Maceille (M1/M2/M3)
 - **Intel Mac -DMG**: Erillinen `.dmg` Intel-Maceille
 - **GitHub Actions**: Rakentaa molemmat DMG-versiot automaattisesti
   - `macos-13` runner Intel-versiolle
   - `macos-14` runner ARM-versiolle
+- **jpackage-parametrit**: Lisätty `-Dapple.laf.useScreenMenuBar=true` ja `-Xdock:name=Tilitin`
 
 ### 📝 Dokumentaatio
 - Päivitetty README.md selventämään macOS DMG -vaihtoehdot
 - Päivitetty release notes -malli sisältämään molemmat DMG-versiot
+- Lisätty ohje JAR-tiedoston käyttöön
 
 ---
 

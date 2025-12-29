@@ -42,11 +42,7 @@ public class DataSourceInitializationDialog extends JDialog {
 		setLayout(new GridBagLayout());
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		
-		String[] comboBoxItems = new String[model.getFileCount()];
-		
-		for (int i = 0; i < comboBoxItems.length; i++) {
-			comboBoxItems[i] = model.getName(i);
-		}
+		String[] comboBoxItems = model.getModelNames();
 		
 		comboBox = new JComboBox(comboBoxItems);
 		JLabel label = new JLabel("Tilikarttamalli");
@@ -102,9 +98,10 @@ public class DataSourceInitializationDialog extends JDialog {
 	
 	public void createWorker() {
 		int index = comboBox.getSelectedIndex();
+		String modelName = model.getModelNameByIndex(index);
 		
 		worker = new DataSourceInitializationWorker(
-					registry.getDataSource(), model.getFile(index));
+					registry.getDataSource(), model, modelName);
 		
 		dispose();
 		

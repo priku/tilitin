@@ -58,25 +58,29 @@ Tarvitset Java 21:n tai uudemman. Suosittelen OpenJDK-versiota:
 java -version
 ```
 
-### 2. Käännä projekti
+#### 2. Lataa JAR-tiedosto
+
+Lataa `tilitin-1.6.1-priku.1.jar` [Releases-sivulta](https://github.com/priku/tilitin/releases/latest)
+
+#### 3. Käynnistä ohjelma
+
+**Windows:**
+```bash
+java -jar tilitin-1.6.1-priku.1.jar
+```
+
+**Mac/Linux:**
+```bash
+java -jar tilitin-1.6.1-priku.1.jar
+```
+
+### Kehittäjille: Käännä projekti itse
 
 ```bash
 mvn clean package
 ```
 
-Tämä luo `target/tilitin-1.6.0-priku.1.jar` -tiedoston.
-
-### 3. Käynnistä ohjelma
-
-**Windows:**
-```bash
-java -jar target\tilitin-1.6.0-priku.1.jar
-```
-
-**Mac/Linux:**
-```bash
-java -jar target/tilitin-1.6.0-priku.1.jar
-```
+Tämä luo `target/tilitin-1.6.1-priku.1.jar` -tiedoston.
 
 **Mac-käyttäjille:** Jos saat varoituksen epäilyttävästä ohjelmistosta:
 1. Klikkaa JAR-tiedostoa hiiren oikealla painikkeella (Ctrl + klikkaus)

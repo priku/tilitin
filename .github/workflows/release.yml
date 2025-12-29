@@ -292,6 +292,9 @@ jobs:
           --description "${{ env.APP_DESCRIPTION }}" \
           --type dmg \
           --mac-package-name "Tilitin" \
+          --java-options "-Dapple.laf.useScreenMenuBar=true" \
+          --java-options "-Dapple.awt.application.name=Tilitin" \
+          --java-options "-Xdock:name=Tilitin" \
           --dest dist/
         
         # Rename DMG to include architecture

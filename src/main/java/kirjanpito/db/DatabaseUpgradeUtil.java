@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -17,6 +18,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import kirjanpito.models.DataSourceInitializationModel;
+import kirjanpito.ui.Kirjanpito;
 
 public class DatabaseUpgradeUtil {
 	public static void executeQueries(Connection conn, InputStream stream) throws IOException, SQLException {
@@ -137,7 +139,7 @@ public class DatabaseUpgradeUtil {
 				"GP2;2050;2070;2120;2140;2070;2080;2140;2150;Muut rahastot");
 			content = content.replace("TP3;2060;2070;Yhtiöjärjestyksen tai sääntöjen mukaiset rahastot",
 				"TP3;2060;2070;2130;2140;Yhtiöjärjestyksen tai sääntöjen mukaiset rahastot");
-			content = content.replace("TP3;2070;2100;2140;2150;Muut rahastot",
+			content = content.replace("TP3;2070;2080;2140;2150;Muut rahastot",
 				"TP3;2070;2080;2140;2150;Muut rahastot\n" +
 				"TB2;2050;2070;2120;2140;2070;2080;2140;2150;Muut rahastot yhteensä");
 
@@ -155,19 +157,15 @@ public class DatabaseUpgradeUtil {
 		String balanceSheetDetailed = "";
 
 		if (coaAmmatinharjoittaja || coaYksityistalous) {
-			File dir = new DataSourceInitializationModel().getArchiveDirectory();
-			File file;
+			DataSourceInitializationModel dsiModel = new DataSourceInitializationModel();
+			String modelName = coaYksityistalous ? "Yksityistalous" : "Ammatinharjoittaja";
 
-			if (coaYksityistalous) {
-				file = new File(dir, "yksityistalous.jar");
-			}
-			else {
-				file = new File(dir, "ammatinharjoittaja-2010-07.jar");
-			}
-
-			JarFile jarFile = new JarFile(file);
-			incomeStatementDetailed = readTextFile(jarFile, "income-statement-detailed.txt");
-			balanceSheetDetailed = readTextFile(jarFile, "balance-sheet-detailed.txt");
+			incomeStatementDetailed = new String(
+					dsiModel.getModelFileAsStream(modelName, "income-statement-detailed.txt").readAllBytes(),
+					StandardCharsets.UTF_8);
+			balanceSheetDetailed = new String(
+					dsiModel.getModelFileAsStream(modelName, "balance-sheet-detailed.txt").readAllBytes(),
+					StandardCharsets.UTF_8);
 		}
 
 		/* Lisätään tulosteet. */
@@ -603,18 +601,4 @@ public class DatabaseUpgradeUtil {
 		logger.info("Tietokannan päivittäminen versioon 14 onnistui");
 	}
 
-	private static String readTextFile(JarFile jarFile, String name) throws IOException {
-		BufferedReader reader = new BufferedReader(new InputStreamReader(
-				jarFile.getInputStream(jarFile.getEntry(name)),
-				Charset.forName("UTF-8")));
-
-		StringBuilder sb = new StringBuilder();
-		String line;
-
-		while ((line = reader.readLine()) != null) {
-			sb.append(line).append('\n');
-		}
-
-		return sb.toString();
-	}
 }
