@@ -43,27 +43,40 @@ jobs:
       id: version
       run: echo "VERSION=${GITHUB_REF_NAME#v}" >> $GITHUB_OUTPUT
 
-    - name: Create release notes
-      id: notes
+    - name: Extract release notes from CHANGELOG
+      id: changelog
       run: |
         VERSION="${{ steps.version.outputs.VERSION }}"
-        cat > release-notes.md << 'EOF'
-        ## Tilitin ${{ github.ref_name }}
-
+        echo "Extracting release notes for version $VERSION from CHANGELOG.md..."
+        
+        # Extract section for this version (between ## [version] and next ## [ or ---)
+        awk -v ver="$VERSION" '
+          /^## \[/ { 
+            if (found) exit
+            if (index($0, "[" ver "]") > 0) found=1 
+          }
+          found && /^---$/ { exit }
+          found { print }
+        ' CHANGELOG.md > release-notes.md
+        
+        # Check if we found anything
+        if [ -s release-notes.md ]; then
+          echo "✅ Found release notes for v$VERSION ($(wc -l < release-notes.md) lines)"
+          head -20 release-notes.md
+        else
+          echo "⚠️ No specific notes found for v$VERSION, using default"
+          cat > release-notes.md << EOF
+        ## Tilitin v$VERSION
+        
         ### Asennus
-
-        1. Lataa `tilitin-${{ steps.version.outputs.VERSION }}-priku.1.jar`
+        
+        1. Lataa \`tilitin-$VERSION-priku.1.jar\`
         2. Varmista että Java 21+ on asennettu
-        3. Käynnistä: `java -jar tilitin-${{ steps.version.outputs.VERSION }}-priku.1.jar`
-
-        ### Ominaisuudet
-
-        - ✅ Java 21 -tuki
-        - ✅ CSV/Procountor-tuonti
-        - ✅ SQLite, MySQL, PostgreSQL
-        - ✅ ARM Mac -tuki (M1/M2/M3)
-        - ✅ Modernit kirjastot
+        3. Käynnistä: \`java -jar tilitin-$VERSION-priku.1.jar\`
+        
+        Katso täysi muutosloki: [CHANGELOG.md](https://github.com/priku/tilitin/blob/master/CHANGELOG.md)
         EOF
+        fi
 
     - name: Upload to GitHub Release
       uses: softprops/action-gh-release@v2
