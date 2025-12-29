@@ -10,9 +10,14 @@
 - **SQLite JDBC**: 3.47.1.0 → 3.51.1.0 (vakauspäivitys)
 - **OpenCSV**: 5.9 → 5.12.0 (vakauspäivitys)
 
+**Maven plugin-päivitykset:**
+- **maven-jar-plugin**: 3.4.2 → 3.5.0 (bugikorjauksia)
+- **maven-shade-plugin**: 3.6.0 → 3.6.1 (bugikorjauksia)
+
 **Säilytetty:**
 - Java 21 LTS (tuki syyskuuhun 2029)
 - iTextPDF 5.5.13.4 (vakaa, päivitys vaatisi koodimuutoksia)
+- maven-compiler-plugin 3.13.0 (uusin stable)
 
 **Tekniset huomiot:**
 - Kaikki päivitykset yhteensopivia ilman koodimuutoksia
