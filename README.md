@@ -43,7 +43,33 @@ Lataa käyttöjärjestelmällesi sopiva asennuspaketti [Releases-sivulta](https:
 | 🐧 **Fedora/Red Hat** | `tilitin-X.X.X-1.x86_64.rpm` | RPM-paketti |
 | ☕ **Kaikki (JAR)** | `tilitin-X.X.X-priku.1.jar` | Vaatii Java 21+ |
 
-**macOS-käyttäjille:** Jos DMG ei toimi, käytä JAR-versiota - se on alustariippumaton ja toimii varmasti.
+#### macOS-käyttäjille: "Vahingollinen"-varoitus
+
+Jos macOS valittaa että sovellus on "vahingollinen" tai "ei voida avata", toimi näin:
+
+**Vaihtoehto A - Järjestelmäasetukset (suositeltu):**
+1. Yritä avata Tilitin.app
+2. Avaa **Järjestelmäasetukset** → **Tietosuoja ja turvallisuus**
+3. Vieritä alas, näet ilmoituksen _"Tilitin" estettiin_
+4. Klikkaa **Avaa silti** -painiketta
+5. Vahvista **Avaa**
+
+**Vaihtoehto B - Pikanäppäin:**
+1. **Control** + klikkaa Tilitin.app
+2. Valitse **Avaa** valikosta
+3. Vahvista **Avaa**
+
+**Vaihtoehto C - Terminaali:**
+```bash
+xattr -cr /Applications/Tilitin.app
+```
+
+**Vaihtoehto D - Käytä JAR-versiota:**
+- JAR-tiedosto ohittaa macOS Gatekeeperin kokonaan
+- Vaatii vain Java 21:n asennuksen
+- Katso ohjeet alta
+
+> **Miksi tämä tapahtuu?** Tilitin on avoimen lähdekoodin ohjelma ilman maksullista Apple Developer -allekirjoitusta ($99/vuosi). Ohjelma on täysin turvallinen - lähdekoodi on julkisesti tarkasteltavissa GitHubissa.
 
 ### Asennus JAR-tiedostosta
 
