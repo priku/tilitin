@@ -4,9 +4,22 @@
 
 ### 🔧 Korjaukset
 
+#### Tilikarttamallien lataus
+- **Korjattu: Tilikarttamallivalikko ei auennut** - Tilikarttamallit puuttuivat kokonaan
+- **Lisätty 10 sisäänrakennettua tilikarttamallia** JAR:n sisään resources-hakemistoon:
+  - Elinkeinotoiminta (ALV 22%, 23%, 24%, 25,5%)
+  - Yhdistys
+  - Tiekunta
+  - Asunto-osakeyhtiö
+  - Yksityistalous
+  - Yhteisen vesialueen osakaskunta
+- **Korvattu tilikarttamallien latauslogiikka** - Luetaan mallit JAR-resursseista tiedostojärjestelmän sijaan
+- **Päivitetty DataSourceInitializationModel** - Käyttää Java Properties -tiedostoa mallien luettelointiin
+- **Päivitetty DataSourceInitializationWorker** - Lukee mallit InputStreamina
+- **Päivitetty DatabaseUpgradeUtil** - Yhteensopiva uuden mallisysteemin kanssa
+
 #### macOS-tuki
 - **Korjattu: Valikot eivät toimineet macOS:ssä** - Siirretty system properties asetus ennen AWT/Swing-initialisointia
-- **Korjattu: Tilikarttamallivalikko ei auennut** - Lisätty macOS-spesifiset JVM-optiot
 - **ARM Mac -DMG**: Erillinen `.dmg` Apple Silicon -Maceille (M1/M2/M3)
 - **Intel Mac -DMG**: Erillinen `.dmg` Intel-Maceille
 - **GitHub Actions**: Rakentaa molemmat DMG-versiot automaattisesti
