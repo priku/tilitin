@@ -1,0 +1,147 @@
+name: Build & Release
+
+on:
+  push:
+    tags: [ 'v*' ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    name: Build JAR
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up JDK 21
+      uses: actions/setup-java@v4
+      with:
+        java-version: '21'
+        distribution: 'temurin'
+        cache: maven
+
+    - name: Build with Maven
+      run: mvn -B clean package --file pom.xml
+
+    - name: Verify build
+      run: |
+        echo "✅ Build successful"
+        ls -lh target/tilitin*.jar
+
+    - name: Upload JAR artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: tilitin-jar-${{ github.ref_name }}
+        path: target/tilitin*.jar
+        retention-days: 90
+
+    - name: Extract version from tag
+      id: version
+      run: echo "VERSION=${GITHUB_REF_NAME#v}" >> $GITHUB_OUTPUT
+
+    - name: Create release notes
+      id: notes
+      run: |
+        VERSION="${{ steps.version.outputs.VERSION }}"
+        cat > release-notes.md << 'EOF'
+        ## Tilitin ${{ github.ref_name }}
+
+        ### Asennus
+
+        1. Lataa `tilitin-${{ steps.version.outputs.VERSION }}-priku.1.jar`
+        2. Varmista että Java 21+ on asennettu
+        3. Käynnistä: `java -jar tilitin-${{ steps.version.outputs.VERSION }}-priku.1.jar`
+
+        ### Ominaisuudet
+
+        - ✅ Java 21 -tuki
+        - ✅ CSV/Procountor-tuonti
+        - ✅ SQLite, MySQL, PostgreSQL
+        - ✅ ARM Mac -tuki (M1/M2/M3)
+        - ✅ Modernit kirjastot
+        EOF
+
+    - name: Upload to GitHub Release
+      uses: softprops/action-gh-release@v2
+      with:
+        tag_name: ${{ github.ref_name }}
+        name: Tilitin ${{ github.ref_name }}
+        draft: false
+        body_path: release-notes.md
+        files: |
+          target/tilitin*.jar
+
+  windows-installer:
+    name: Build Windows Installer
+    runs-on: windows-latest
+    needs: build-and-release
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up JDK 21
+      uses: actions/setup-java@v4
+      with:
+        java-version: '21'
+        distribution: 'temurin'
+        cache: maven
+
+    - name: Build JAR
+      run: mvn -B package -DskipTests
+
+    - name: Build Windows app-image
+      run: |
+        echo "Building Windows app-image with jPackage..."
+        .\build-windows.bat
+      shell: cmd
+
+    - name: Install Inno Setup
+      run: |
+        choco install innosetup -y
+      shell: powershell
+
+    - name: Build Inno Setup installer
+      run: |
+        echo "Building Inno Setup installer..."
+        .\build-inno-installer.bat
+      shell: cmd
+
+    - name: Upload Windows installer to release
+      uses: softprops/action-gh-release@v2
+      with:
+        tag_name: ${{ github.ref_name }}
+        files: |
+          dist/installer/*.exe
+
+  package-dependencies:
+    name: Package Dependencies
+    runs-on: ubuntu-latest
+    needs: build-and-release
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up JDK 21
+      uses: actions/setup-java@v4
+      with:
+        java-version: '21'
+        distribution: 'temurin'
+        cache: maven
+
+    - name: Gather dependencies with sources
+      run: mvn -B dependency:copy-dependencies -Dclassifier=sources
+
+    - name: Zip dependencies
+      run: cd target && zip -9 -r tilitin-dependencies.zip dependency
+
+    - name: Upload dependencies to release
+      uses: softprops/action-gh-release@v2
+      with:
+        tag_name: ${{ github.ref_name }}
+        files: target/tilitin-dependencies.zip

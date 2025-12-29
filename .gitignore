@@ -1,0 +1,27 @@
+# Build output
+bin/
+dist/
+target/
+dependency-reduced-pom.xml
+
+# Duplicate tilikartat (already in src/main/resources/)
+tilikarttamallit/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Windows build
+*.exe
+*.msi

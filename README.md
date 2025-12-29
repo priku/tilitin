@@ -1,0 +1,219 @@
+# Tilitin - Yhdistetty versio v1.6.0
+
+Tilitin on ilmainen kirjanpito-ohjelma suomalaisille yrityksille ja yhdistyksille. Tämä on **yhdistetty versio**, joka sisältää parhaat ominaisuudet eri kehittäjien versioista.
+
+## 🎯 Mitä tämä versio sisältää?
+
+Tämä **tilitin-masterPriku** -versio yhdistää:
+
+### ✅ Tommi Helinevan alkuperäinen Tilitin (v1.5.0)
+- Vakaa ja testattu pohja
+- Täydet kirjanpito-ominaisuudet
+
+### ✅ Jouni Seppäsen (jkseppan) modernisoinnit
+- **Java 21** -tuki (uusin LTS-versio)
+- **ARM Mac -tuki** (toimii uusilla M1/M2/M3-Maceilla)
+- **Maven-rakennusjärjestelmä** (modernimpi kuin Ant)
+- **Päivitetyt kirjastot**:
+  - iTextPDF 5.5.13.4
+  - SQLite JDBC 3.47.1.0
+  - MySQL Connector 9.1.0
+  - PostgreSQL JDBC 42.7.4
+  - SLF4J 2.0.16
+- **Sisäänrakennetut tilikartat** (ei tarvitse kopioida erikseen)
+- **Mac-bugien korjaukset** (tekstikentän ensimmäinen merkki ei enää katoa)
+- **Dynaaminen versiointi** (versio luetaan JAR-manifestista)
+
+### ✅ Eetu Kallion (Kallio95) lisäominaisuudet
+- **CSV/Procountor-tuonti** - tuo tilitapahtumia suoraan verkkopankista
+- **OpenCSV 5.9** -kirjasto CSV-käsittelyyn
+
+## 📦 Asennus
+
+### 1. Asenna Java 21
+
+Tarvitset Java 21:n tai uudemman. Suosittelen OpenJDK-versiota:
+- [Azul Zulu JDK 21](https://www.azul.com/downloads/#zulu) (suositeltu)
+- [Eclipse Adoptium JDK 21](https://adoptium.net/)
+
+**Tarkista asennus:**
+```bash
+java -version
+```
+
+### 2. Käännä projekti
+
+```bash
+mvn clean package
+```
+
+Tämä luo `target/tilitin-1.6.0-priku.1.jar` -tiedoston.
+
+### 3. Käynnistä ohjelma
+
+**Windows:**
+```bash
+java -jar target\tilitin-1.6.0-priku.1.jar
+```
+
+**Mac/Linux:**
+```bash
+java -jar target/tilitin-1.6.0-priku.1.jar
+```
+
+**Mac-käyttäjille:** Jos saat varoituksen epäilyttävästä ohjelmistosta:
+1. Klikkaa JAR-tiedostoa hiiren oikealla painikkeella (Ctrl + klikkaus)
+2. Valitse "Avaa"
+3. Vahvista avaaminen
+
+## 🚀 Pääominaisuudet
+
+### Kirjanpito
+- ✅ Täysi kaksinkertainen kirjanpito
+- ✅ Useita tilikausia
+- ✅ Vientimallit nopeaan kirjaukseen
+- ✅ Tositteiden hallinta
+- ✅ ALV-laskenta ja -raportointi
+
+### Tietokannat
+- ✅ SQLite (oletus, ei asennusta vaadi)
+- ✅ MySQL/MariaDB
+- ✅ PostgreSQL
+
+### Raportit
+- ✅ Tase
+- ✅ Tuloslaskelma
+- ✅ Päiväkirja
+- ✅ Pääkirja
+- ✅ Tililuettelo
+- ✅ ALV-ilmoitus
+- ✅ PDF-vienti
+
+### 🆕 CSV/Procountor-tuonti (UUSI!)
+
+Voit tuoda tilitapahtumat suoraan verkkopankin Procountor-yhteensopivasta CSV-tiedostosta.
+
+**Käyttö:**
+1. Lataa CSV-tiedosto verkkopankistasi (Procountor-muoto)
+2. Valitse Tilittimestä: **Muokkaa → CSV-tuonti (Procountor)**
+3. Syötä tiedostopolku (esim. `C:\Users\käyttäjä\Desktop\tuonti.csv`)
+4. Paina OK
+
+**HUOM:**
+- Varmista että kaikki CSV:ssä olevat tilit löytyvät Tilittimestä
+- Testaa tuontia ensin uudella tilikaudella
+- Kaikki tapahtumat tuodaan nykyiselle tilikaudelle
+
+## 📂 Tilikartat
+
+Mukana tulee valmiit tilikartat:
+- 📊 Asunto-osakeyhtiö
+- 📊 Elinkeinotoiminta (ALV 22%, 23%, 24%)
+- 📊 Tiekunta
+- 📊 Yhdistys
+- 📊 Yhteisen vesialueen osakaskunta
+
+## 🛠️ Kehittäjille
+
+### Rakennusjärjestelmä
+Projekti käyttää **Maven 3.6+** -rakennusjärjestelmää.
+
+### Rakenne
+```
+tilitin-masterPriku/
+├── src/
+│   └── main/
+│       ├── java/          # Java-lähdekoodit
+│       │   └── kirjanpito/
+│       └── resources/     # Resurssit (kuvat, tilikartat, SQL)
+│           ├── kirjanpito/
+│           └── tilikarttamallit/
+├── pom.xml               # Maven-konfiguraatio
+└── README.md
+```
+
+### Maven-komennot
+
+```bash
+# Käännä projekti
+mvn compile
+
+# Aja testit
+mvn test
+
+# Luo JAR-paketti
+mvn package
+
+# Puhdista build-hakemisto
+mvn clean
+
+# Käännä ja luo JAR yhdellä komennolla
+mvn clean package
+```
+
+### IDE-asetukset
+- **IntelliJ IDEA**: Avaa `pom.xml` projektina
+- **Eclipse**: Import → Existing Maven Projects
+- **VS Code**: Asenna Java Extension Pack
+
+## 📄 Lisenssi
+
+Tämä on vapaa ohjelma: tätä ohjelmaa saa levittää edelleen ja muuttaa **GNU General Public License (GPL) version 3** ehtojen mukaisesti.
+
+Tätä ohjelmaa levitetään siinä toivossa, että se olisi hyödyllinen, mutta **ilman mitään takuuta**; edes hiljaista takuuta kaupallisesti hyväksyttävästä laadusta tai soveltuvuudesta tiettyyn tarkoitukseen.
+
+Katso [COPYING](COPYING) -tiedostosta lisätietoja.
+
+## 🙏 Kiitokset
+
+- **Tommi Helineva** - Alkuperäinen Tilitin (https://helineva.net/tilitin/)
+- **Jouni Seppänen (jkseppan)** - Java 21 -päivitys, Mac-tuki, Maven-siirto
+- **Eetu Kallio (Kallio95)** - CSV/Procountor-tuonti
+
+## 🐛 Bugit ja ominaisuuspyynnöt
+
+Jos löydät bugin tai haluat ehdottaa uutta ominaisuutta, luo issue GitHubissa.
+
+## 📚 Dokumentaatio
+
+### Priku-dokumentaatio
+
+- 📘 [Asennusohje](docs/ASENNUS.md) - Yksityiskohtaiset asennusohjeet
+- 📥 [CSV-tuonti-opas](docs/CSV_TUONTI.md) - Tuo tilitapahtumat verkkopankista
+- 🔄 [Versiovertailu](docs/VERSIOT_VERTAILU.md) - Miksi Priku on paras valinta?
+- 🛠️ [Kehittäjän opas](CONTRIBUTING.md) - Aloita kehittäminen
+- 🏗️ [Tekninen dokumentaatio](docs/TEKNINEN_DOKUMENTAATIO.md) - Arkkitehtuuri ja toteutus
+- 📝 [Muutosloki](CHANGELOG.md) - Versiohistoria
+
+### Alkuperäinen dokumentaatio
+
+Tommi Helinevan sivuilta:
+- https://helineva.net/tilitin/
+- https://helineva.net/tilitin/ohjeet/
+
+## ⚡ Pikaohjeet
+
+### Uuden kirjanpidon aloittaminen
+1. Käynnistä Tilitin
+2. Tiedosto → Uusi tietokanta
+3. Valitse tilikartta
+4. Täytä yrityksen perustiedot
+5. Aloita kirjaaminen!
+
+### Tositteen luominen
+1. Klikkaa "Uusi tosite" (tai paina Insert)
+2. Valitse päivämäärä
+3. Lisää viennit (Debet ja Kredit tasapainoon)
+4. Tallenna
+
+### Raportin tulostaminen
+1. Tulosteet → Valitse raportti
+2. Valitse aikaväli
+3. Esikatsele tai tulosta PDF:ksi
+
+---
+
+**Versio:** 1.6.0-priku.1
+**Java-versio:** 21+
+**Käännöstyökalu:** Maven 3.6+
+**Viimeisin päivitys:** 2025-12-29
