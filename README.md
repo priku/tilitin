@@ -30,7 +30,21 @@ Tämä **tilitin-masterPriku** -versio yhdistää:
 
 ## 📦 Asennus
 
-### 1. Asenna Java 21
+### Lataa valmis paketti (suositeltu)
+
+Lataa käyttöjärjestelmällesi sopiva asennuspaketti [Releases-sivulta](https://github.com/priku/tilitin/releases/latest):
+
+| Käyttöjärjestelmä | Tiedosto | Kuvaus |
+|-------------------|----------|--------|
+| 🪟 **Windows** | `Tilitin-X.X.X-Setup.exe` | Asennusohjelma (suositeltu) |
+| 🍎 **macOS** | `Tilitin-X.X.X.dmg` | DMG-levykuva |
+| 🐧 **Ubuntu/Debian** | `tilitin_X.X.X-1_amd64.deb` | DEB-paketti |
+| 🐧 **Fedora/Red Hat** | `tilitin-X.X.X-1.x86_64.rpm` | RPM-paketti |
+| ☕ **Kaikki (JAR)** | `tilitin-X.X.X-priku.1.jar` | Vaatii Java 21+ |
+
+### Asennus JAR-tiedostosta
+
+#### 1. Asenna Java 21
 
 Tarvitset Java 21:n tai uudemman. Suosittelen OpenJDK-versiota:
 - [Azul Zulu JDK 21](https://www.azul.com/downloads/#zulu) (suositeltu)
@@ -114,6 +128,21 @@ Mukana tulee valmiit tilikartat:
 - 📊 Yhteisen vesialueen osakaskunta
 
 ## 🛠️ Kehittäjille
+
+### CI/CD ja julkaisut
+
+Projekti käyttää **GitHub Actions** -automaatiota:
+
+- ✅ **Automaattinen buildaus** jokaisesta commitista
+- ✅ **Multi-platform release** - kaikki paketit luodaan automaattisesti
+- ✅ **Release notes** luetaan automaattisesti CHANGELOG.md:stä
+
+#### Release-prosessi
+
+1. Päivitä versio `pom.xml`:ssä
+2. Lisää muutokset `CHANGELOG.md`:hen
+3. Luo ja pushaa tagi: `git tag -a v1.6.1 -m "Release 1.6.1" && git push origin v1.6.1`
+4. GitHub Actions rakentaa automaattisesti kaikki paketit
 
 ### Rakennusjärjestelmä
 Projekti käyttää **Maven 3.6+** -rakennusjärjestelmää.

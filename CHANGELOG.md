@@ -1,8 +1,16 @@
 # Muutosloki - Tilitin Priku
 
-## Versio 1.6.0-priku.1 (2025-12-29)
+## [1.6.0] - 2025-12-29
 
 ### 🆕 Uudet ominaisuudet
+
+#### Multi-platform julkaisu
+- **GitHub Actions CI/CD** - Automaattinen buildaus ja julkaisu
+- **Windows Installer** - `.exe` asennusohjelma (jPackage + Inno Setup)
+- **macOS DMG** - `.dmg` levykuva natiivi Mac-asennus
+- **Linux DEB** - `.deb` paketti Debian/Ubuntu-jakeluille
+- **Linux RPM** - `.rpm` paketti Fedora/Red Hat -jakeluille
+- **CHANGELOG-integraatio** - Release notes luetaan automaattisesti
 
 #### CSV/Procountor-tuonti (Kallio95)
 - **CSV-tiedostojen tuonti**: Mahdollisuus tuoda tilitapahtumat Procountor-yhteensopivasta CSV-tiedostosta
