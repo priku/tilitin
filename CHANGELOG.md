@@ -1,5 +1,27 @@
 # Muutosloki - Tilitin Priku
 
+## [1.6.1] - 2025-12-30
+
+### 🔄 Riippuvuuksien päivitykset
+
+**Tietoturva- ja vakauspäivitykset:**
+- **PostgreSQL JDBC**: 42.7.4 → 42.7.8 (turvapäivitys)
+- **MySQL Connector**: 9.1.0 → 9.5.0 (vakauspäivitys)
+- **SQLite JDBC**: 3.47.1.0 → 3.51.1.0 (vakauspäivitys)
+- **OpenCSV**: 5.9 → 5.12.0 (vakauspäivitys)
+
+**Säilytetty:**
+- Java 21 LTS (tuki syyskuuhun 2029)
+- iTextPDF 5.5.13.4 (vakaa, päivitys vaatisi koodimuutoksia)
+
+**Tekniset huomiot:**
+- Kaikki päivitykset yhteensopivia ilman koodimuutoksia
+- JDBC-ajurit käyttävät standardirajapintaa
+- OpenCSV API pysynyt yhteensopivana
+- Build testattu - toimii normaalisti
+
+---
+
 ## [1.6.0] - 2025-12-29
 
 ### 🔧 Kriittiset korjaukset

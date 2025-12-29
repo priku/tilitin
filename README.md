@@ -1,4 +1,4 @@
-# Tilitin - Yhdistetty versio v1.6.0
+# Tilitin - Yhdistetty versio v1.6.1
 
 Tilitin on ilmainen kirjanpito-ohjelma suomalaisille yrityksille ja yhdistyksille. Tämä on **yhdistetty versio**, joka sisältää parhaat ominaisuudet eri kehittäjien versioista.
 
