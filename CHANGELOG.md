@@ -1,5 +1,39 @@
 # Muutosloki - Tilitin Priku
 
+## [1.6.2] - 2025-12-29
+
+### 🔧 Korjaukset
+
+#### Tilikarttamallien lataus
+- **Korjattu: Tilikarttamallivalikko ei auennut** - Tilikarttamallit puuttuivat kokonaan
+- **Lisätty 10 sisäänrakennettua tilikarttamallia** JAR:n sisään resources-hakemistoon:
+  - Elinkeinotoiminta (ALV 22%, 23%, 24%, 25,5%)
+  - Yhdistys
+  - Tiekunta
+  - Asunto-osakeyhtiö
+  - Yksityistalous
+  - Yhteisen vesialueen osakaskunta
+- **Korvattu tilikarttamallien latauslogiikka** - Luetaan mallit JAR-resursseista tiedostojärjestelmän sijaan
+- **Päivitetty DataSourceInitializationModel** - Käyttää Java Properties -tiedostoa mallien luettelointiin
+- **Päivitetty DataSourceInitializationWorker** - Lukee mallit InputStreamina
+- **Päivitetty DatabaseUpgradeUtil** - Yhteensopiva uuden mallisysteemin kanssa
+
+#### macOS-tuki
+- **Korjattu: Valikot eivät toimineet macOS:ssä** - Siirretty system properties asetus ennen AWT/Swing-initialisointia
+- **ARM Mac -DMG**: Erillinen `.dmg` Apple Silicon -Maceille (M1/M2/M3)
+- **Intel Mac -DMG**: Erillinen `.dmg` Intel-Maceille
+- **GitHub Actions**: Rakentaa molemmat DMG-versiot automaattisesti
+  - `macos-13` runner Intel-versiolle
+  - `macos-14` runner ARM-versiolle
+- **jpackage-parametrit**: Lisätty `-Dapple.laf.useScreenMenuBar=true` ja `-Xdock:name=Tilitin`
+
+### 📝 Dokumentaatio
+- Päivitetty README.md selventämään macOS DMG -vaihtoehdot
+- Päivitetty release notes -malli sisältämään molemmat DMG-versiot
+- Lisätty ohje JAR-tiedoston käyttöön
+
+---
+
 ## [1.6.1] - 2025-12-29
 
 ### 🔧 Korjaukset

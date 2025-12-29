@@ -5,7 +5,7 @@
 
     <groupId>fi.priku</groupId>
     <artifactId>tilitin</artifactId>
-    <version>1.6.1-priku.1</version>
+    <version>1.6.2-priku.1</version>
 
     <name>Tilitin</name>
     <description>Ilmainen kirjanpito-ohjelma - Yhdistetty versio parhailla ominaisuuksilla</description>
