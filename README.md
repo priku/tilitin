@@ -36,12 +36,14 @@ Lataa käyttöjärjestelmällesi sopiva asennuspaketti [Releases-sivulta](https:
 
 | Käyttöjärjestelmä | Tiedosto | Kuvaus |
 |-------------------|----------|--------|
-| 🪟 **Windows** | `Tilitin-X.X.X-Setup.exe` | Asennusohjelma (suositeltu) |
-| 🍎 **macOS (M1/M2/M3)** | `Tilitin-X.X.X-arm64.dmg` | DMG Apple Silicon (ARM) |
-| 🍎 **macOS (Intel)** | `Tilitin-X.X.X.dmg` | DMG Intel x86_64 |
-| 🐧 **Ubuntu/Debian** | `tilitin_X.X.X-1_amd64.deb` | DEB-paketti |
-| 🐧 **Fedora/Red Hat** | `tilitin-X.X.X-1.x86_64.rpm` | RPM-paketti |
-| ☕ **Kaikki (JAR)** | `tilitin-X.X.X-priku.1.jar` | Vaatii Java 21+ |
+| 🪟 **Windows** | `Tilitin-X.X.X-Setup.exe` | Sisältää Javan, ei vaadi asennuksia |
+| 🍎 **macOS (M1/M2/M3)** | `Tilitin-X.X.X-arm64.dmg` | Sisältää Javan, ei vaadi asennuksia |
+| 🍎 **macOS (Intel)** | `Tilitin-X.X.X.dmg` | Sisältää Javan, ei vaadi asennuksia |
+| 🐧 **Ubuntu/Debian** | `tilitin_X.X.X-1_amd64.deb` | Sisältää Javan, ei vaadi asennuksia |
+| 🐧 **Fedora/Red Hat** | `tilitin-X.X.X-1.x86_64.rpm` | Sisältää Javan, ei vaadi asennuksia |
+| ☕ **Kaikki (JAR)** | `tilitin-X.X.X-priku.1.jar` | **Vaatii Java 21+** (katso alta) |
+
+> **💡 Vinkki:** DMG/EXE/DEB/RPM-paketit ovat **valmiita käyttöön** - ne sisältävät Java-ajon mukana eikä vaadi mitään asennuksia. JAR-versio on vaihtoehto jos haluat käyttää omaa Java-asennustasi.
 
 #### macOS-käyttäjille: "Vahingollinen"-varoitus
 
@@ -66,16 +68,23 @@ xattr -cr /Applications/Tilitin.app
 
 **Vaihtoehto D - Käytä JAR-versiota:**
 - JAR-tiedosto ohittaa macOS Gatekeeperin kokonaan
-- Vaatii vain Java 21:n asennuksen
-- Katso ohjeet alta
+- **Vaatii Java 21:n asennuksen** (katso ohjeet alta)
+- Toimii varmasti kaikilla alustoilla
 
 > **Miksi tämä tapahtuu?** Tilitin on avoimen lähdekoodin ohjelma ilman maksullista Apple Developer -allekirjoitusta ($99/vuosi). Ohjelma on täysin turvallinen - lähdekoodi on julkisesti tarkasteltavissa GitHubissa.
 
-### Asennus JAR-tiedostosta
+---
+
+### Vaihtoehtoinen asennus: JAR-tiedosto
+
+**Käytä JAR-versiota jos:**
+- DMG ei toimi koneellasi
+- Haluat käyttää omaa Java-asennustasi
+- Tarvitset täyden hallinnan Java-ajoympäristöön
 
 #### 1. Asenna Java 21
 
-Tarvitset Java 21:n tai uudemman. Suosittelen OpenJDK-versiota:
+**JAR-versio vaatii** Java 21:n tai uudemman. Suosittelen OpenJDK-versiota:
 - [Azul Zulu JDK 21](https://www.azul.com/downloads/#zulu) (suositeltu)
 - [Eclipse Adoptium JDK 21](https://adoptium.net/)
 
