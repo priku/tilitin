@@ -4,9 +4,6 @@ dist/
 target/
 dependency-reduced-pom.xml
 
-# Duplicate tilikartat (already in src/main/resources/)
-tilikarttamallit/
-
 # IDE
 .idea/
 *.iml

@@ -1,0 +1,201 @@
+200
+A;1441;Huoneisto-osakkeet;0
+A;1447;Pörssiosakkeet;0
+A;1453;Muut osakkeet;0
+A;1750;Lainasaamiset;0
+A;1800;Siirtosaamiset;0
+A;1900;Käteisvarat;0
+A;1910;Pankkitili 1;0
+A;1920;Pankkitili 2;0
+A;2251;Edellisten tilikausien voitto (tappio);5
+A;2621;Rahoituslaitoslaina;1
+A;2671;Ostovelat;1
+A;3000;Peruspalkka;3
+A;3002;Sunnuntailisä;3
+A;3004;Ylityölisä;3
+A;3006;Yötyölisä;3
+A;3010;Kotimaan päiväraha;3
+A;3012;Matkakorvaus;3
+A;3014;Työttömyyspäiväraha;3
+A;3016;Ulkomaanpäiväraha;3
+A;3018;Äitiyspäiväraha;3
+A;3100;Korkotulo;3
+A;3102;Kurssivoitto;3
+A;3104;Osinko;3
+A;3106;Rahastotuotto;3
+A;3200;Kirpputori;3
+A;3202;Rahapelin tulo;3
+A;3204;Vuokratulo;3
+A;3990;Muu tulo;3
+A;4000;Jätehuolto;4
+A;4002;Kaasumaksu;4
+A;4004;Kiinteistövero;4
+A;4006;Lämmitysöljy;4
+A;4008;Remontointi;4
+A;4010;Sähkömaksu;4
+A;4012;Televisiolupa;4
+A;4014;Vesimaksu;4
+A;4016;Vuokra;4
+A;4018;Yhtiövastike;4
+A;4100;Alkoholijuomat;4
+A;4102;Kahvi;4
+A;4104;Kivennäisvesi;4
+A;4106;Maito;4
+A;4108;Mehu;4
+A;4110;Piimä;4
+A;4112;Tee;4
+A;4114;Vesi;4
+A;4200;Hedelmät;4
+A;4202;Jauho;4
+A;4204;Juusto;4
+A;4206;Juures;4
+A;4208;Jäätelö;4
+A;4210;Kala;4
+A;4212;Kananmuna;4
+A;4214;Leipä;4
+A;4216;Liha;4
+A;4218;Makeinen;4
+A;4220;Mauste;4
+A;4222;Mikroruoka;4
+A;4224;Pakasteruoka;4
+A;4226;Pikkusuolainen;4
+A;4228;Rasva;4
+A;4230;Säilyke;4
+A;4232;Vihannes;4
+A;4300;Harrastukset;4
+A;4400;Paperi;4
+A;4401;Liima;4
+A;4402;Kirjoitustarvike;4
+A;4403;Teippi;4
+A;4404;Kansio;4
+A;4405;Sakset;4
+A;4500;Astia;4
+A;4502;Kodinkone;4
+A;4504;Ruokailuväline;4
+A;4506;Pesuaine;4
+A;4508;Saunatarvike;4
+A;4510;Siivousväline;4
+A;4550;Elektroniikka;4
+A;4552;Huonekalu;4
+A;4554;Tekstiili;4
+A;4556;Kasvi;4
+A;4558;Valaisin;4
+A;4600;Deodorantti;4
+A;4602;Hammasharja;4
+A;4604;Hammastahna;4
+A;4606;Hiustenhoitoväline;4
+A;4608;Ihonhoitotuote;4
+A;4610;Parranajoväline;4
+A;4612;Parturi / Kampaaja;4
+A;4614;Saippua;4
+A;4616;Shampoo;4
+A;4700;Kurssimaksu;4
+A;4702;Kurssi- / oppikirja;4
+A;4704;Lukukausimaksu;4
+A;4706;Monistus;4
+A;4708;Opiskelutarvike;4
+A;4800;Ammattilehti;4
+A;4802;Harrastelehti;4
+A;4804;Kaunokirjallisuus;4
+A;4806;Sarjakuvalehti;4
+A;4808;Tiedelehti;4
+A;4800;Tietosanakirja;4
+A;4900;Eläinlääkäri;4
+A;4902;Eläinten hoitomaksu;4
+A;4904;Eläinten ruoka;4
+A;4906;Eläinten tarvike;4
+A;5000;Auton huolto;4
+A;5001;Auton katsastus;4
+A;5002;Autotarvike;4
+A;5003;Parkkimaksu;4
+A;5004;Polttoaine;4
+A;5005;Renkaat;4
+A;5006;Pesu;4
+A;5007;Varaosa;4
+A;5008;Öljy;4
+A;5020;Juna;4
+A;5022;Laiva;4
+A;5024;Lentokone;4
+A;5026;Linja-auto;4
+A;5028;Metro;4
+A;5030;Raitiovaunu;4
+A;5032;Taksi;4
+A;5100;Asennuskulu;4
+A;5102;Liittymismaksu;4
+A;5104;Internet-liittymän kuukausimaksu;4
+A;5106;Puhelinliittymän kuukausimaksu;4
+A;5200;Korkokulut rahoituslaitoslainoista;4
+A;5202;Korkokulut ostoveloista;4
+A;5204;Lainojen hoitokulut;4
+A;5300;Fysioterapia;4
+A;5302;Hammaslääkäri;4
+A;5304;Lääke;4
+A;5306;Lääkäri;4
+A;5308;Rokotus;4
+A;5310;Sairaala;4
+A;5312;Terveyskeskus;4
+A;5400;Alusasu;4
+A;5402;Hame;4
+A;5404;Housut;4
+A;5406;Jalkineet;4
+A;5408;Käsineet;4
+A;5410;Neule;4
+A;5412;Paita;4
+A;5414;Päähine;4
+A;5416;Päällysvaate;4
+A;5418;Sukat;4
+A;5420;Työvaate;4
+A;5500;Autovakuutus;4
+A;5502;Eläkevakuutus;4
+A;5504;Henkivakuutus;4
+A;5506;Kotivakuutus;4
+A;5508;Matkavakuutus;4
+A;5510;Sairausvakuutus;4
+A;5512;Urheiluvakuutus;4
+A;5514;Vapaa-ajan vakuutus;4
+A;5600;Elokuva;4
+A;5602;Elokuvateatteri;4
+A;5604;Konsertti;4
+A;5606;Messut;4
+A;5608;Näyttely;4
+A;5610;Rahapelit;4
+A;5612;Ravintola;4
+A;5614;Teatteri;4
+A;5616;Äänitteet;4
+A;5990;Muu meno;4
+H;1441;Vastaavaa;0
+H;1441;Pysyvät vastaavat;1
+H;1441;Aineelliset hyödykkeet;2
+H;1441;Sijoitukset;3
+H;1750;Vaihtuvat vastaavat;1
+H;1750;Saamiset;2
+H;1900;Rahat ja pankkisaamiset;2
+H;2251;Vastattavaa;0
+H;2251;Oma pääoma;1
+H;2621;Vieras pääoma;1
+H;3000;Tulot;0
+H;3000;Palkka;1
+H;3010;Päivärahat;1
+H;3100;Sijoitustulot;1
+H;3200;Muut tulot;1
+H;4000;Menot;0
+H;4000;Asuminen;1
+H;4100;Elintarvikkeet;1
+H;4100;Juoma;2
+H;4200;Ruoka;2
+H;4300;Harrastukset;1
+H;4400;Toimistotarvikkeet;1
+H;4500;Kotitalous;1
+H;4550;Sisustus;1
+H;4600;Kosmetiikka;1
+H;4700;Koulutus;1
+H;4800;Lehdet ja kirjallisuus;1
+H;4900;Lemmikit;1
+H;5000;Matkakulut;1
+H;5100;Puhelin- ja tietoliikennekulut;1
+H;5200;Rahoituskulut;1
+H;5300;Sairauskulut;1
+H;5400;Vaatetus;1
+H;5500;Vakuutukset;1
+H;5600;Vapaa-aika;1
+H;5900;Muut menot;1

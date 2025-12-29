@@ -1,0 +1,27 @@
+HB0;3000;4000;TULOT
+TP1;3000;3010;Palkka
+TP1;3010;3100;Päivärahat
+TP1;3100;3200;Sijoitustulot
+TP1;3200;4000;Muut tulot
+SB0;3000;4000;Tulot yhteensä
+HB0;4000;9999;MENOT
+TP1;4000;4100;Asuminen
+TP1;4100;4300;Elintarvikkeet
+TP1;4300;4400;Harrastukset
+TP1;4400;4500;Toimistotarvikkeet
+TP1;4500;4550;Kotitalous
+TP1;4550;4600;Sisustus
+TP1;4600;4700;Kosmetiikka
+TP1;4700;4800;Koulutus
+TP1;4800;4900;Lehdet ja kirjallisuus
+TP1;5000;5100;Matkakulut
+TP1;5100;5200;Puhelin- ja tietoliikennekulut
+TP1;5200;5300;Rahoituskulut
+TP1;5300;5400;Sairauskulut
+TP1;5400;5500;Vaatetus
+TP1;5500;5600;Vakuutukset
+TP1;5600;5700;Vapaa-aika
+TP1;5900;6000;Muut menot
+SB0;4000;9999;Menot yhteensä
+SB0;3000;9999;TILIKAUDEN VOITTO (TAPPIO)
+

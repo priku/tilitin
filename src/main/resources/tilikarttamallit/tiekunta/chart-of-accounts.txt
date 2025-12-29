@@ -1,0 +1,89 @@
+87
+A;1041;Aineettomat oikeudet;0
+A;1081;Muut pitkävaikutteiset menot;0
+A;1111;Maa- ja vesialueet;0
+A;1151;Rakennukset ja rakennelmat;0
+A;1211;Koneet ja kalusto;0
+A;1311;Muut aineelliset hyödykkeet (poistokelpoiset);0
+A;1711;Myyntisaamiset;0
+A;1771;Muut saamiset;0
+A;1811;Siirtosaamiset;0
+A;1851;Osakkeet ja osuudet;0
+A;1901;Käteisvarat;0
+A;1911;Pankkitili;0
+A;2011;Peruspääoma;2
+A;2251;Edellisten tilikausien ylijäämät;5
+A;2351;Tilikauden ylijäämä;6
+A;2631;Lainat rahoituslaitoksilta;1
+A;2871;Ostovelat;1
+A;2931;Ennakonpidätys- ja sosiaaliturvamaksuvelka;1
+A;2959;Muut velat;1
+A;2961;Siirtovelat;1
+A;3001;Yksikkömaksut;3
+A;3011;Tienkäyttömaksut;3
+A;3021;Valtionavustus;3
+A;3031;Kunnanavustus;3
+A;3901;Muut varsinaisen toiminnan tuotot;3
+A;4001;Auraus;4
+A;4011;Lanaus;4
+A;4021;Tienvarsien niitto;4
+A;4031;Ojien kunnossapito;4
+A;4041;Siltojen ja rumpujen kunnossapito;4
+A;4051;Sora ja murske;4
+A;4061;Suolaus;4
+A;4071;Aurausviitat;4
+A;4081;Liikennemerkit;4
+A;4091;Tarvikkeet;4
+A;4101;Palkat;4
+A;4111;Palkkiot;4
+A;4121;Eläkevakuutusmaksut;4
+A;4131;Sosiaaliturvamaksut;4
+A;4141;Muut henkilöstön vakuutusmaksut;4
+A;4501;Kone- ja kalustohankinnat;4
+A;4511;Kone- ja kalustovuokrat;4
+A;4521;Koneiden ja kaluston korjaus;4
+A;4531;Taloushallintopalvelut;4
+A;4541;Tilintarkastuspalvelut;4
+A;4551;Muut hallintopalvelut;4
+A;4601;Puhelinkulut;4
+A;4611;Datasiirtokulut;4
+A;4621;Postikulut;4
+A;4631;Rahaliikenteen kulut;4
+A;4641;Vakuutukset;4
+A;4651;Toimistotarvikkeet;4
+A;4661;Kokouskulut;4
+A;4901;Muut kulut;4
+A;6001;Korkotuotot;3
+A;6091;Muut sijoitustoiminnan tuotot;3
+A;6101;Korkokulut;4
+A;6191;Muut sijoitustoiminnan kulut;4
+A;7001;Satunnaiset tuotot;3
+A;7101;Satunnaiset kulut;4
+A;8001;Poistot koneista ja kalustosta;4
+A;8011;Poistot rakennuksista;4
+H;1041;Vastaavaa;0
+H;1041;Pysyvät vastaavat;1
+H;1041;Aineettomat hyödykkeet;2
+H;1111;Aineelliset hyödykkeet;2
+H;1711;Vaihtuvat vastaavat;1
+H;1711;Saamiset;2
+H;1851;Rahoitusarvopaperit;2
+H;1901;Rahat ja pankkisaamiset;2
+H;2011;Vastattavaa;0
+H;2011;Oma pääoma;1
+H;2631;Vieras pääoma;1
+H;2631;Pitkäaikainen vieras pääoma;2
+H;2871;Lyhytaikainen vieras pääoma;2
+H;3001;Tuloslaskelma;0
+H;3001;Varsinaisen toiminnan tuotot;1
+H;4001;Varsinaisen toiminnan kulut;1
+H;4001;Tienhoito;2
+H;4101;Henkilöstökulut;2
+H;4501;Muut kulut;2
+H;6001;Sijoitus- ja rahoitustoiminta;1
+H;6001;Sijoitus- ja rahoitustoiminnan tuotot;2
+H;6101;Sijoitus- ja rahoitustoiminnan kulut;2
+H;7001;Satunnaiset erät;1
+H;7001;Satunnaiset tuotot;2
+H;7101;Satunnaiset kulut;2
+H;8001;Poistot;1

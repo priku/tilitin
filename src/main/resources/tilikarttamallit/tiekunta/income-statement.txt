@@ -1,0 +1,23 @@
+HB0;3000;5000;8000;9000;Varsinainen toiminta
+HP1;3000;4000;Tuotot
+TP2;3000;3010;Yksikkömaksut
+TP2;3010;3020;Tienkäyttömaksut
+TP2;3020;3030;Valtionavustus
+TP2;3030;3040;Kunnanavustus
+TP2;3040;3050;Muut varsinaisen toiminnan tuotot
+SB1;3000;4000;Tuotot yhteensä
+HP1;4000;5000;Kulut
+TP2;4000;4100;Tienhoito
+TP2;4100;4200;Henkilöstökulut
+TP2;8000;9000;Poistot
+TP2;4200;5000;Muut varsinaisen toiminnan kulut
+SB1;4000;5000;Kulut yhteensä
+SB0;3000;5000;8000;9000;Tuotto-/kulujäämä
+HB0;6000;7000;Sijoitus- ja rahoitustoiminta
+SP1;6000;6100;Tuotot
+SP1;6100;7000;Kulut
+SB0;3000;7000;8000;9000;Tuotto-/kulujäämä
+HB0;7000;7500;Satunnaiset erät
+SP1;7000;7100;Satunnaiset tuotot
+SP1;7100;7500;Satunnaiset kulut
+SB0;3000;9999;Tilikauden ylijäämä (alijäämä)

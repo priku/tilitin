@@ -1,0 +1,40 @@
+HB0;3000;5000;8000;9000;Varsinainen toiminta
+HB1;3000;4000;Varsinainen toiminnan tuotot
+DP2;3000;4000;Varsinainen toiminnan tuotot
+SB1;3000;4000;Varsinainen toiminnan tuotot yhteensä
+
+HB1;4000;5000;Varsinainen toiminnan kulut
+
+GB2;4000;4100;Tienhoito
+DP3;4000;4100;Tienhoito
+TB2;4000;4100;Tienhoito yhteensä
+
+GB2;4100;4200;Henkilöstökulut
+DP3;4100;4200;Henkilöstökulut
+TB2;4100;4200;Henkilöstökulut yhteensä
+
+GB2;8000;9000;Poistot
+DP3;8000;9000;Poistot
+TB2;8000;9000;Poistot yhteensä
+
+GB2;4200;5000;Muut kulut
+DP3;4200;5000;Muut kulut
+TB2;4200;5000;Muut kulut yhteensä
+
+SB1;4000;5000;8000;9000;Varsinainen toiminnan kulut yhteensä
+
+SB0;3000;5000;8000;9000;Varsinainen toiminta yhteensä
+-
+SB0;3000;5000;8000;9000;Tuotto-/kulujäämä
+-
+HB0;6000;7000;Sijoitus- ja rahoitustoiminta
+DP1;6000;7000;Sijoitus- ja rahoitustoiminta
+SB0;6000;7000;Sijoitus- ja rahoitustoiminta yhteensä
+-
+SB0;3000;7000;8000;9000;Tuotto-/kulujäämä
+-
+HB0;7000;7500;Satunnaiset erät
+DP1;7000;7500;Satunnaiset erät
+SB0;7000;7500;Satunnaiset erät yhteensä
+-
+SB0;3000;9999;Tilikauden ylijäämä (alijäämä)

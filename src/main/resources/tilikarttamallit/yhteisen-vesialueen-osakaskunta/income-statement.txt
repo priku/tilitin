@@ -1,0 +1,17 @@
+HB0;3000;6000;8000;9000;Varsinainen toiminta
+SB1;3000;4000;Tuotot
+HP1;4000;6000;Kulut
+TP2;4000;5000;Kalavesien hoitokulut
+TP2;5000;5300;Henkilöstökulut
+TP2;8000;9000;Poistot
+TP2;5300;6000;Muut varsinaisen toiminnan kulut
+SB1;4000;6000;Kulut yhteensä
+SB0;3000;6000;8000;9000;Tuotto-/kulujäämä
+HB0;6000;7000;Sijoitus- ja rahoitustoiminta
+SP1;6000;6100;Tuotot
+SP1;6100;7000;Kulut
+SB0;3000;7000;8000;9000;Tuotto-/kulujäämä
+HB0;7000;7500;Satunnaiset erät
+SP1;7000;7100;Satunnaiset tuotot
+SP1;7100;7500;Satunnaiset kulut
+SB0;3000;9999;Tilikauden ylijäämä (alijäämä)

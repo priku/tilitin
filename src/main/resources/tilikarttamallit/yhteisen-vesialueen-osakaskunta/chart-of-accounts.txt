@@ -1,0 +1,102 @@
+101
+A;1040;Aineettomat oikeudet;0
+A;1080;Muut pitkävaikutteiset menot;0
+A;1150;Rakennukset ja rakennelmat;0
+A;1210;Koneet ja kalusto;0
+A;1310;Muut aineelliset hyödykkeet (poistokelpoiset);0
+A;1710;Myyntisaamiset;0
+A;1720;Siirtosaamiset;0
+A;1730;Muut saamiset;0
+A;1850;Osakkeet ja osuudet;0
+A;1900;Käteisvarat;0
+A;1910;Pankkitili;0
+A;2010;Peruspääoma;2
+A;2250;Edellisten tilikausien ylijäämät;5
+A;2350;Tilikauden ylijäämä;6
+A;2630;Lainat rahoituslaitoksilta;1
+A;2870;Ostovelat;1
+A;2930;Ennakonpidätysvelka;1
+A;2931;Sosiaaliturvamaksuvelka;1
+A;2950;Siirtovelat;1
+A;2960;Muut velat;1
+A;3000;Py-maksut/kalastusluvat osakkaille;3
+A;3010;Py-maksut/kalastusluvat ei-osakkaille;3
+A;3020;Ammattikalastusluvat;3
+A;3030;Erityiskalapaikan luvat;3
+A;3100;Metsästysluvat;3
+A;3200;Vuokratulot;3
+A;3300;Omistajakorvaukset;3
+A;3310;Viehekorttipalautukset;3
+A;3320;Viehelupa-alueen tuotot/ka;3
+A;3400;Korvaukset käyttöoikeuksista ja luvista;3
+A;3500;Vesijättöjen lunastustuotot;3
+A;3600;Avustukset;3
+A;3900;Muut varsinaisen toiminnan tuotot;3
+A;4000;Istutuskulut;4
+A;4010;Muut kalavedenhoitokulut;4
+A;4100;Kalastuslupien myyntikulut;4
+A;4200;Kalastuksen valvontakulut;4
+A;4300;Talkoot, rantakalaillat, tapahtumat;4
+A;5000;Palkat;4
+A;5010;Palkkiot;4
+A;5100;Eläkevakuutusmaksut;4
+A;5150;Sosiaaliturvamaksut;4
+A;5160;Muut henkilöstön vakuutusmaksut;4
+A;5200;Kulukorvaukset;4
+A;5210;Matkakulut;4
+A;5300;Lehdet, kirjat oppaat;4
+A;5310;Puhelinkulut;4
+A;5320;Postikulut;4
+A;5330;Kopiointikulut;4
+A;5340;Toimistotarvikkeet;4
+A;5350;Datasiirtokulut;4
+A;5360;Rahaliikenteen kulut;4
+A;5400;Taloushallintopalvelut;4
+A;5410;Toiminnan-/tilintarkastuspalvelut;4
+A;5420;Muut hallintopalvelut;4
+A;5500;Kokous- ja neuvottelukulut;4
+A;5600;Lahjat, muistamiset;4
+A;5610;Edustuskulut;4
+A;5700;Kone- ja kalustohankinnat;4
+A;5710;Kone- ja kalustovuokrat;4
+A;5720;Koneiden ja kaluston korjaus;4
+A;5800;Jäsenmaksut;4
+A;5850;Vakuutukset;4
+A;5900;Muut kulut;4
+A;6000;Korkotuotot;3
+A;6090;Muut sijoitustoiminnan tuotot;3
+A;6100;Korkokulut;4
+A;6190;Muut sijoitustoiminnan kulut;4
+A;7000;Satunnaiset tuotot;3
+A;7100;Satunnaiset kulut;4
+A;8000;Poistot koneista ja kalustosta;4
+A;8010;Poistot rakennuksista;4
+A;9500;Tuloverot;4
+A;9510;Muut välittömät verot;4
+H;1040;Vastaavaa;0
+H;1040;Pysyvät vastaavat;1
+H;1040;Aineettomat hyödykkeet;2
+H;1150;Aineelliset hyödykkeet;2
+H;1710;Vaihtuvat vastaavat;1
+H;1710;Saamiset;2
+H;1850;Rahoitusarvopaperit;2
+H;1900;Rahat ja pankkisaamiset;2
+H;2010;Vastattavaa;0
+H;2010;Oma pääoma;1
+H;2630;Vieras pääoma;1
+H;2630;Pitkäaikainen vieras pääoma;2
+H;2870;Lyhytaikainen vieras pääoma;2
+H;3000;Tuloslaskelma;0
+H;3000;Varsinaisen toiminnan tuotot;1
+H;4000;Varsinaisen toiminnan kulut;1
+H;4000;Kalavesien hoitokulut;2
+H;5000;Henkilöstökulut;2
+H;5300;Muut kulut;2
+H;6000;Sijoitus- ja rahoitustoiminta;1
+H;6000;Sijoitus- ja rahoitustoiminnan tuotot;2
+H;6100;Sijoitus- ja rahoitustoiminnan kulut;2
+H;7000;Satunnaiset erät;1
+H;7000;Satunnaiset tuotot;2
+H;7100;Satunnaiset kulut;2
+H;8000;Poistot;1
+H;9500;Tuloverot ja muut välittömät verot;1

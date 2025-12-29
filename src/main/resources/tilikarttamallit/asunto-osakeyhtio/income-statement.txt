@@ -1,0 +1,48 @@
+GB0;3000;4000;Kiinteistön tuotot
+TP1;3000;3100;Vastikkeet
+TP1;3100;3200;Vuokrat
+TP1;3200;3300;Käyttökorvaukset
+TP1;3900;4000;Muut kiinteistön tuotot
+TB0;3000;4000;Kiinteistön tuotot yhteensä
+TB0;4000;5000;Luottotappiot ja oikaisuerät
+GB0;5000;7000;Kiinteistön hoitokulut
+TP1;5000;6000;Henkilöstökulut
+TP1;6000;6100;Hallinto
+TP1;6100;6130;Käyttö ja huolto
+TP1;6130;6150;Ulkoalueiden hoito
+TP1;6150;6200;Siivous
+TP1;6200;6300;Lämmitys
+TP1;6300;6400;Vesi ja jätevesi
+TP1;6400;6450;Sähkö ja kaasu
+TP1;6450;6500;Jätehuolto
+TP1;6500;6600;Vahinkovakuutukset
+TP1;6600;6700;Vuokrat
+TP1;6700;6800;Kiinteistövero
+TP1;6800;6900;Korjaukset
+TP1;6900;7000;Muut hoitokulut
+TB0;5000;7000;Kiinteistön hoitokulut yhteensä
+SB0;3000;7000;HOITOKATE
+GB0;7000;8000;Poistot ja arvonalentumiset
+TP1;7000;7010;Rakennuksista ja rakennelmista
+TP1;7010;7020;Koneista ja kalustosta
+TP1;7020;7030;Muista pitkävaikutteisista menoista
+TB0;7000;8000;Poistot ja arvonalentumiset yhteensä
+GB0;8000;9000;Rahoitustuotot ja -kulut
+TP1;8000;8100;Osinkotuotot
+TP1;8100;8200;Korkotuotot
+TP1;8200;8500;Muut rahoitustuotot
+TP1;8500;8600;Korkokulut
+TP1;8600;9000;Muut rahoituskulut
+TB0;8000;9000;Rahoitustuotot ja -kulut yhteensä
+SB0;3000;9000;VOITTO (TAPPIO) ENNEN SATUNNAISIA ERIÄ
+GB0;9000;9200;Satunnaiset erät
+TP1;9000;9100;Satunnaiset tuotot
+TP1;9100;9200;Satunnaiset kulut
+TB0;9000;9200;Satunnaiset erät yhteensä
+SB0;3000;9200;VOITTO (TAPPIO) ENNEN TILINPÄÄTÖSSIIRTOJA JA VEROJA
+GB0;9200;9400;Tilinpäätössiirrot
+TP1;9200;9300;Poistoeron muutos
+TP1;9300;9400;Vapaaehtoisten varausten muutos
+TB0;9200;9400;Tilinpäätössiirrot yhteensä
+TB0;9400;9500;Välittömät verot
+SB0;3000;9999;TILIKAUDEN VOITTO (TAPPIO)

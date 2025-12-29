@@ -1,0 +1,94 @@
+HB0;3000;4000;TULOT
+
+GB1;3000;3010;Palkka
+DP2;3000;3010;Palkka
+TB1;3000;3010;Palkka yhteensä
+
+GB1;3010;3100;Päivärahat
+DP2;3010;3100;Päivärahat
+TB1;3010;3100;Päivärahat yhteensä
+
+GB1;3100;3200;Sijoitustulot
+DP2;3100;3200;Sijoitustulot
+TB1;3100;3200;Sijoitustulot yhteensä
+
+GB1;3200;4000;Muut tulot
+DP2;3200;4000;Muut tulot
+TB1;3200;4000;Muut tulot yhteensä
+
+SB0;3000;4000;Tulot yhteensä
+-
+HB0;4000;9999;MENOT
+
+GB1;4000;4100;Asuminen
+DP2;4000;4100;Asuminen
+TB1;4000;4100;Asuminen yhteensä
+
+GB1;4100;4300;Elintarvikkeet
+DP2;4100;4300;Elintarvikkeet
+TB1;4100;4300;Elintarvikkeet yhteensä
+
+GB1;4300;4400;Harrastukset
+DP2;4300;4400;Harrastukset
+TB1;4300;4400;Harrastukset yhteensä
+
+GB1;4400;4500;Toimistotarvikkeet
+DP2;4400;4500;Toimistotarvikkeet
+TB1;4400;4500;Toimistotarvikkeet yhteensä
+
+GB1;4500;4550;Kotitalous
+DP2;4500;4550;Kotitalous
+TB1;4500;4550;Kotitalous yhteensä
+
+GB1;4550;4600;Sisustus
+DP2;4550;4600;Sisustus
+TB1;4550;4600;Sisustus yhteensä
+
+GB1;4600;4700;Kosmetiikka
+DP2;4600;4700;Kosmetiikka
+TB1;4600;4700;Kosmetiikka yhteensä
+
+GB1;4700;4800;Koulutus
+DP2;4700;4800;Koulutus
+TB1;4700;4800;Koulutus yhteensä
+
+GB1;4800;4900;Lehdet ja kirjallisuus
+DP2;4800;4900;Lehdet ja kirjallisuus
+TB1;4800;4900;Lehdet ja kirjallisuus yhteensä
+
+GB1;5000;5100;Matkakulut
+DP2;5000;5100;Matkakulut
+TB1;5000;5100;Matkakulut yhteensä
+
+GB1;5100;5200;Puhelin- ja tietoliikennekulut
+DP2;5100;5200;Puhelin- ja tietoliikennekulut
+TB1;5100;5200;Puhelin- ja tietoliikennekulut yhteensä
+
+GB1;5200;5300;Rahoituskulut
+DP2;5200;5300;Rahoituskulut
+TB1;5200;5300;Rahoituskulut yhteensä
+
+GB1;5300;5400;Sairauskulut
+DP2;5300;5400;Sairauskulut
+TB1;5300;5400;Sairauskulut yhteensä
+
+GB1;5400;5500;Vaatetus
+DP2;5400;5500;Vaatetus
+TB1;5400;5500;Vaatetus yhteensä
+
+GB1;5500;5600;Vakuutukset
+DP2;5500;5600;Vakuutukset
+TB1;5500;5600;Vakuutukset yhteensä
+
+GB1;5600;5700;Vapaa-aika
+DP2;5600;5700;Vapaa-aika
+TB1;5600;5700;Vapaa-aika yhteensä
+
+GB1;5900;6000;Muut menot
+DP2;5900;6000;Muut menot
+TB1;5900;6000;Muut menot yhteensä
+
+SB0;4000;9999;Menot yhteensä
+-
+SB0;3000;9999;TILIKAUDEN VOITTO (TAPPIO)
+

@@ -1,0 +1,131 @@
+GB0;3000;4000;Kiinteistön tuotot
+
+GB1;3000;3100;Vastikkeet
+DP2;3000;3100;Vastikkeet
+TB1;3000;3100;Vastikkeet yhteensä
+
+GB1;3100;3200;Vuokrat
+DP2;3100;3200;Vuokrat
+TB1;3100;3200;Vuokrat yhteensä
+
+GB1;3200;3300;Käyttökorvaukset
+DP2;3200;3300;Käyttökorvaukset
+TB1;3200;3300;Käyttökorvaukset yhteensä
+
+GB1;3900;4000;Muut kiinteistön tuotot
+DP2;3900;4000;Muut kiinteistön tuotot
+TB1;3900;4000;Muut kiinteistön tuotot yhteensä
+
+TB0;3000;4000;Kiinteistön tuotot yhteensä
+
+GB0;4000;5000;Luottotappiot ja oikaisuerät
+DP1;4000;5000;Luottotappiot ja oikaisuerät
+TB0;4000;5000;Luottotappiot ja oikaisuerät yhteensä
+
+GB0;5000;7000;Kiinteistön hoitokulut
+
+GB1;5000;6000;Henkilöstökulut
+DP2;5000;6000;Henkilöstökulut
+TB1;5000;6000;Henkilöstökulut yhteensä
+
+GB1;6000;6100;Hallinto
+DP2;6000;6100;Hallinto
+TB1;6000;6100;Hallinto yhteensä
+
+GB1;6100;6130;Käyttö ja huolto
+DP2;6100;6130;Käyttö ja huolto
+TB1;6100;6130;Käyttö ja huolto yhteensä
+
+GB1;6130;6150;Ulkoalueiden hoito
+DP2;6130;6150;Ulkoalueiden hoito
+TB1;6130;6150;Ulkoalueiden hoito yhteensä
+
+GB1;6150;6200;Siivous
+DP2;6150;6200;Siivous
+TB1;6150;6200;Siivous yhteensä
+
+GB1;6200;6300;Lämmitys
+DP2;6200;6300;Lämmitys
+TB1;6200;6300;Lämmitys yhteensä
+
+GB1;6300;6400;Vesi ja jätevesi
+DP2;6300;6400;Vesi ja jätevesi
+TB1;6300;6400;Vesi ja jätevesi yhteensä
+
+GB1;6400;6450;Sähkö ja kaasu
+DP2;6400;6450;Sähkö ja kaasu
+TB1;6400;6450;Sähkö ja kaasu yhteensä
+
+GB1;6450;6500;Jätehuolto
+DP2;6450;6500;Jätehuolto
+TB1;6450;6500;Jätehuolto yhteensä
+
+GB1;6500;6600;Vahinkovakuutukset
+DP2;6500;6600;Vahinkovakuutukset
+TB1;6500;6600;Vahinkovakuutukset yhteensä
+
+GB1;6600;6700;Vuokrat
+DP2;6600;6700;Vuokrat
+TB1;6600;6700;Vuokrat yhteensä
+
+GB1;6700;6800;Kiinteistövero
+DP2;6700;6800;Kiinteistövero
+TB1;6700;6800;Kiinteistövero yhteensä
+
+GB1;6800;6900;Korjaukset
+DP2;6800;6900;Korjaukset
+TB1;6800;6900;Korjaukset yhteensä
+
+GB1;6900;7000;Muut hoitokulut
+DP2;6900;7000;Muut hoitokulut
+TB1;6900;7000;Muut hoitokulut yhteensä
+
+TB0;5000;7000;Kiinteistön hoitokulut yhteensä
+-
+SB0;3000;7000;HOITOKATE
+-
+GB0;7000;8000;Poistot ja arvonalentumiset
+DP1;7000;8000;Poistot ja arvonalentumiset
+TB0;7000;8000;Poistot ja arvonalentumiset yhteensä
+
+GB0;8000;9000;Rahoitustuotot ja -kulut
+
+GB1;8000;8100;Osinkotuotot
+DP2;8000;8100;Osinkotuotot
+TB1;8000;8100;Osinkotuotot yhteensä
+
+GB1;8100;8200;Korkotuotot
+DP2;8100;8200;Korkotuotot
+TB1;8100;8200;Korkotuotot yhteensä
+
+GB1;8200;8500;Muut rahoitustuotot
+DP2;8200;8500;Muut rahoitustuotot
+TB1;8200;8500;Muut rahoitustuotot yhteensä
+
+GB1;8500;8600;Korkokulut
+DP2;8500;8600;Korkokulut
+TB1;8500;8600;Korkokulut yhteensä
+
+GB1;8600;9000;Muut rahoituskulut
+DP2;8600;9000;Muut rahoituskulut
+TB1;8600;9000;Muut rahoituskulut yhteensä
+
+TB0;8000;9000;Rahoitustuotot ja -kulut yhteensä
+-
+SB0;3000;9000;VOITTO (TAPPIO) ENNEN SATUNNAISIA ERIÄ
+-
+GB0;9000;9200;Satunnaiset erät
+DP1;9000;9200;Satunnaiset erät
+TB0;9000;9200;Satunnaiset erät yhteensä
+-
+SB0;3000;9200;VOITTO (TAPPIO) ENNEN TILINPÄÄTÖSSIIRTOJA JA VEROJA
+-
+GB0;9200;9400;Tilinpäätössiirrot
+DP1;9200;9400;Tilinpäätössiirrot
+TB0;9200;9400;Tilinpäätössiirrot yhteensä
+
+GB0;9400;9500;Välittömät verot
+DP1;9400;9500;Välittömät verot
+TB0;9400;9500;Välittömät verot yhteensä
+
+SB0;3000;9999;TILIKAUDEN VOITTO (TAPPIO)

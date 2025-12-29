@@ -1,0 +1,236 @@
+235
+A;1031;Aineettomat oikeudet;0
+A;1089;Muut pitkävaikutteiset menot;0
+A;1101;Maa- ja vesialueet;0
+A;1105;Liittymismaksut;0
+A;1111;Maanvuokraoikeudet;0
+A;1113;Liittymismaksut vuokrakiinteistöistä;0
+A;1121;Rakennukset ja rakennelmat;0
+A;1151;Rakennusten vuokraoikeudet;0
+A;1161;Koneet ja kalusto;0
+A;1305;Piha-asfaltit;0
+A;1339;Muut aineelliset hyödykkeet;0
+A;1441;Osakkeet ja osuudet;0
+A;1447;Muut sijoitukset;0
+A;1471;Pitkäaikaiset lainasaamiset;0
+A;1489;Muut pitkäaikaiset saamiset;0
+A;1549;Muu vaihto-omaisuus;0
+A;1601;Pitkäaikaiset myyntisaamiset;0
+A;1665;Pitkäaikaiset vakuustalletukset;0
+A;1667;Pitkäaikaiset maksetut vuokravakuudet;0
+A;1669;Pitkäaikaiset muut saamiset;0
+A;1681;Pitkäaikaiset siirtosaamiset;0
+A;1701;Hoitovastikesaamiset;0
+A;1702;Vuokrasaamiset;0
+A;1703;Käyttökorvaussaamiset;0
+A;1705;Rahoitusvastikesaamiset;0
+A;1729;Muut myyntisaamiset;0
+A;1751;Lainasaamiset;0
+A;1779;Muut saamiset;0
+A;1781;Osakemerkintäsaamiset;0
+A;1783;Maksamattomat osuudet;0
+A;1801;Siirtosaamiset;0
+A;1881;Osakkeet ja osuudet;0
+A;1891;Rahoitusarvopaperit;0
+A;1900;Käteisvarat;0
+A;1910;Pankkitili 1;0
+A;1920;Pankkitili 2;0
+A;1960;Lyhytaikaiset talletukset;0
+A;1970;Sijoitustili;0
+A;2001;Osakepääoma;2
+A;2021;Rakennusrahasto;2
+A;2031;Arvonkorotusrahasto;2
+A;2051;Lainanlyhennysrahasto;2
+A;2061;Perusparannusrahasto;2
+A;2071;Muut rahastot;2
+A;2251;Edellisten tilikausien voitto/tappio;5
+A;2401;Kertynyt poistoero;1
+A;2493;Asuintalovaraus;1
+A;2499;Muut vapaaehtoiset varaukset;1
+A;2581;Muut pakolliset varaukset;1
+A;2621;Pitkäaikainen rahoituslaitoslaina;1
+A;2651;Pitkäaikaiset eläkelainat;1
+A;2661;Pitkäaikaiset saadut ennakot;1
+A;2671;Pitkäaikaiset ostovelat;1
+A;2749;Pitkäaikaiset muut velat;1
+A;2825;Lyhytaikainen rahoituslaitoslaina;1
+A;2835;Lyhytaikainen rahoitusyhtiölaina;1
+A;2851;Lyhytaikaiset eläkelainat;1
+A;2861;Saadut ennakot;1
+A;2871;Ostovelat;1
+A;2891;Rahoitusvekselit;1
+A;2921;Ennakonpidätysvelka;1
+A;2923;Sosiaaliturvamaksuvelka;1
+A;2932;TyEL-velka;1
+A;2945;Saadut vuokravakuudet;1
+A;2949;Muut lyhytaikaiset velat;1
+A;2951;Siirtovelat;1
+A;3000;Hoitovastikkeet;3
+A;3100;Vuokrat;3
+A;3200;Vesimaksut;3
+A;3210;Autopaikkamaksut;3
+A;3290;Muut käyttökorvaukset;3
+A;3900;Muut kiinteistön tuotot;3
+A;4000;Luottotappiot;4
+A;4100;Muut oikaisuerät;4
+A;5000;Palkat;4
+A;5100;Sotu-maksut;4
+A;5110;Eläkevakuutusmaksut;4
+A;5120;Tapaturmavakuutusmaksut;4
+A;5130;Ryhmähenkivakuutusmaksut;4
+A;5140;Työttömyysvakuutusmaksut;4
+A;5200;Työvaatteet;4
+A;5210;Suojavälineet;4
+A;5220;Työterveyshuolto;4
+A;5290;Muut henkilösivukulut;4
+A;6000;Isännöintikulut;4
+A;6010;Kirjanpitokulut;4
+A;6020;Tilintarkastuskulut;4
+A;6090;Muut hallintokulut;4
+A;6100;Käyttö- ja huoltokulut;4
+A;6130;Ulkoalueiden hoitokulut;4
+A;6150;Siivouskulut;4
+A;6200;Lämmityskulut;4
+A;6300;Vesi- ja jätevesimaksut;4
+A;6400;Sähkö ja kaasu;4
+A;6450;Jätehuolto;4
+A;6500;Vahinkovakuutukset;4
+A;6600;Tontinvuokrat;4
+A;6610;Kone- ja kalustovuokrat;4
+A;6690;Muut vuokrat;4
+A;6700;Kiinteistövero;4
+A;6800;Rakennusten korjaus;4
+A;6810;Ulkoalueiden korjaus;4
+A;6820;Pienkalusto;4
+A;6825;Kaluston korjaus;4
+A;6850;Saadut korvaukset;4
+A;6860;Saadut avustukset;4
+A;6900;Postikulut;4
+A;6910;Puhelinkulut;4
+A;6920;Internetkulut;4
+A;6930;Pankkikulut;4
+A;6940;Kokouskulut;4
+A;6950;Toimistokulut;4
+A;6960;Jäsenmaksut;4
+A;6970;Matkakulut;4
+A;6980;Kilometrikorvaukset;4
+A;6981;Päivärahat;4
+A;6990;Muut hoitokulut;4
+A;7000;Poistot rakennuksista ja rakennelmista;4
+A;7010;Poistot koneista ja kalustosta;4
+A;7020;Poistot muista pitkävaikutteisista menoista;4
+A;8000;Osinkotuotot;3
+A;8100;Korkotuotot;3
+A;8200;Pääomavastikkeet;3
+A;8300;Lainaosuussuoritukset;3
+A;8400;Rahoitusvastikkeet;3
+A;8490;Muut rahoitustuotot;3
+A;8500;Korot rahoituslaitoslainoista;4
+A;8510;Korot lyhytaikaisista veloista;4
+A;8590;Muut korkokulut;4
+A;8600;Lainojen hoitokulut;4
+A;8610;Takausprovisiot;4
+A;8620;Kiinnityskulut;4
+A;8690;Muut rahoituskulut;4
+A;9000;Satunnaiset tuotot;4
+A;9100;Satunnaiset kulut;4
+A;9200;Poistoeron muutos;4
+A;9300;Varausten muutos;4
+A;9400;Välittömät verot;4
+H;1031;Vastaavaa;0
+H;1031;Pysyvät vastaavat;2
+H;1031;Aineettomat hyödykkeet;3
+H;1031;Aineettomat oikeudet;4
+H;1089;Muut pitkävaikutteiset menot;4
+H;1101;Aineelliset hyödykkeet;3
+H;1101;Maa- ja vesialueet;4
+H;1121;Rakennukset ja rakennelmat;4
+H;1161;Koneet ja kalusto;4
+H;1305;Muut aineelliset hyödykkeet;4
+H;1441;Sijoitukset;3
+H;1441;Muut osakkeet ja osuudet;4
+H;1471;Muut saamiset;4
+H;1549;Vaihtuvat vastaavat;2
+H;1549;Vaihto-omaisuus;3
+H;1549;Muu vaihto-omaisuus;4
+H;1601;Pitkäaikaiset saamiset;3
+H;1601;Myyntisaamiset;4
+H;1665;Muut saamiset;4
+H;1681;Siirtosaamiset;4
+H;1701;Lyhytaikaiset saamiset;3
+H;1701;Myyntisaamiset;4
+H;1751;Lainasaamiset;4
+H;1779;Muut saamiset;4
+H;1781;Maksamattomat osakkeet/osuudet;4
+H;1801;Siirtosaamiset;4
+H;1881;Rahoitusarvopaperit;3
+H;1881;Muut osakkeet ja osuudet;4
+H;1891;Muut arvopaperit;4
+H;1900;Rahat ja pankkisaamiset;3
+H;1900;Rahat;4
+H;1910;Pankkisaamiset;4
+H;2001;Vastattavaa;0
+H;2001;Oma pääoma;2
+H;2001;Osakepääoma;3
+H;2021;Rakennusrahasto;3
+H;2031;Arvonkorotusrahasto;3
+H;2051;Muut rahastot;3
+H;2251;Edellisten tilikausien voitto (tappio);3
+H;2401;Tilinpäätössiirtojen kertymä;2
+H;2401;Poistoero;3
+H;2493;Vapaaehtoiset varaukset;3
+H;2581;Pakolliset varaukset;2
+H;2581;Muut pakolliset varaukset;3
+H;2621;Vieras pääoma;2
+H;2621;Pitkäaikainen vieras pääoma;3
+H;2621;Lainat rahoituslaitoksilta;4
+H;2651;Eläkelainat;4
+H;2661;Saadut ennakot;4
+H;2671;Ostovelat;4
+H;2749;Muut velat;4
+H;2825;Lyhytaikainen vieras pääoma;3
+H;2825;Lainat rahoituslaitoksilta;4
+H;2851;Eläkelainat;4
+H;2861;Saadut ennakot;4
+H;2871;Ostovelat;4
+H;2891;Rahoitusvekselit;4
+H;2921;Muut velat;4
+H;2951;Siirtovelat;4
+H;3000;Tuloslaskelma;0
+H;3000;Kiinteistön tuotot;1
+H;3000;Vastikkeet;2
+H;3100;Vuokrat;2
+H;3200;Käyttökorvaukset;2
+H;3900;Muut kiinteistön tuotot;2
+H;4000;Luottotappiot ja oikaisuerät;1
+H;5000;Kiinteistön hoitokulut;1
+H;5000;Henkilöstökulut;2
+H;5000;Palkat;3
+H;5100;Henkilösivukulut;3
+H;5100;Lakisääteiset henkilösivukulut;4
+H;5200;Muut henkilösivukulut;4
+H;6000;Hallinto;2
+H;6100;Käyttö ja huolto;2
+H;6130;Ulkoalueiden hoito;2
+H;6150;Siivous;2
+H;6200;Lämmitys;2
+H;6300;Vesi ja jätevesi;2
+H;6400;Sähkö ja kaasu;2
+H;6450;Jätehuolto;2
+H;6500;Vahinkovakuutukset;2
+H;6600;Vuokrat;2
+H;6700;Kiinteistövero;2
+H;6800;Korjaukset;2
+H;6900;Muut hoitokulut;2
+H;7000;Poistot ja arvonalentumiset;1
+H;8000;Rahoitustuotot ja -kulut;1
+H;8000;Rahoitustuotot;2
+H;8000;Osinkotuotot;3
+H;8100;Korkotuotot;3
+H;8200;Muut rahoitustuotot;3
+H;8500;Rahoituskulut;2
+H;8500;Korkokulut;3
+H;8600;Muut rahoituskulut;3
+H;9000;Satunnaiset erät;1
+H;9200;Tilinpäätössiirrot;1
+H;9400;Välittömät verot;1
