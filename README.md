@@ -2,6 +2,35 @@
 
 Tilitin on ilmainen kirjanpito-ohjelma suomalaisille yrityksille ja yhdistyksille. Tämä on **yhdistetty versio**, joka sisältää parhaat ominaisuudet eri kehittäjien versioista.
 
+---
+
+## 🆕 Tilitin 2.1 saatavilla!
+
+**Uusi versio modernilla JavaFX-käyttöliittymällä:** [priku/tilitin-v2](https://github.com/priku/tilitin-v2)
+
+- ✨ 27 uutta JavaFX-dialogia
+- 🎨 Tumma ja vaalea teema
+- 📎 PDF-liitteet tositteisiin
+- 📊 CSV-tuonti pankkitiliotteista
+- ⚙️ Vapaamuotoiset ALV-prosentit (25,5%, 14% jne.)
+
+---
+
+## ⚠️ Tietokantayhteensopivuus
+
+### Tärkeää tietää versiosta v1.6.2+
+
+Versiot 1.6.2 ja uudemmat päivittävät tietokannan **versiosta 13 → 14** ensimmäisellä avauksella. Tämä mahdollistaa vapaamuotoiset ALV-prosentit.
+
+| Suunta | Toimii | Selitys |
+|--------|--------|---------|
+| Helineva 1.6.1 → v1.6.2+ | ✅ Kyllä | Päivittyy automaattisesti |
+| v1.6.2+ → Helineva 1.6.1 | ❌ Ei | Vanha versio ei ymmärrä uutta skeemaa |
+
+**💾 Ota varmuuskopio ennen ensimmäistä avausta uudemmalla versiolla!**
+
+---
+
 ## 🎯 Mitä tämä versio sisältää?
 
 Tämä **tilitin-masterPriku** -versio yhdistää:
