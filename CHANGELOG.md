@@ -50,6 +50,11 @@
 
 ### 🆕 Uudet ominaisuudet
 
+#### Vapaamuotoiset ALV-prosentit
+- **Tietokantapäivitys v13 → v14**: Lisätty `vat_percentage` sarake tilin ALV-prosentin tallennukseen
+- **Tuki mille tahansa ALV-prosentille**: Ei enää rajoitettu kiinteisiin arvoihin (esim. 25,5%, 14%, 10%)
+- **⚠️ Yhteensopivuushuomio**: Päivitettyä tietokantaa ei voi avata vanhemmilla Tilitin-versioilla (< 1.6.0)
+
 #### Multi-platform julkaisu
 - **GitHub Actions CI/CD** - Automaattinen buildaus ja julkaisu
 - **Windows Installer** - `.exe` asennusohjelma (jPackage + Inno Setup)

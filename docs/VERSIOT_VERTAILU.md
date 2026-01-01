@@ -6,7 +6,7 @@ Tämä dokumentti vertailee eri Tilitin-haarautumia ja selittää miksi **Priku-
 
 | Ominaisuus | Thelineva | Kallio95 | Jkseppan | **Priku** |
 |------------|-----------|----------|----------|-----------|
-| **Versio** | 1.5.0 | 1.5.1 | 1.5.0-jkseppan.1 | **1.6.0-priku.1** |
+| **Versio** | 1.5.0 | 1.5.1 | 1.5.0-jkseppan.1 | **1.6.1-priku.1** |
 | **Java-versio** | Vanha | Vanha | 21 | **21** ✅ |
 | **Rakennustyökalu** | Ant | Ant | Maven | **Maven** ✅ |
 | **ARM Mac -tuki** | ❌ | ❌ | ✅ | **✅** |

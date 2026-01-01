@@ -6,14 +6,14 @@ Tilitin on ilmainen kirjanpito-ohjelma suomalaisille yrityksille ja yhdistyksill
 
 ## ⚠️ Tietokantayhteensopivuus
 
-### Tärkeää tietää versiosta v1.6.2+
+### Tärkeää tietää versiosta v1.6.0+
 
-Versiot 1.6.2 ja uudemmat päivittävät tietokannan **versiosta 13 → 14** ensimmäisellä avauksella. Tämä mahdollistaa vapaamuotoiset ALV-prosentit.
+Versiot 1.6.0 ja uudemmat päivittävät tietokannan **versiosta 13 → 14** ensimmäisellä avauksella. Tämä mahdollistaa vapaamuotoiset ALV-prosentit.
 
 | Suunta | Toimii | Selitys |
 |--------|--------|---------|
-| Helineva 1.6.1 → v1.6.2+ | ✅ Kyllä | Päivittyy automaattisesti |
-| v1.6.2+ → Helineva 1.6.1 | ❌ Ei | Vanha versio ei ymmärrä uutta skeemaa |
+| Helineva 1.5.0 → v1.6.0+ | ✅ Kyllä | Päivittyy automaattisesti |
+| v1.6.0+ → Helineva 1.5.0 | ❌ Ei | Vanha versio ei ymmärrä uutta skeemaa |
 
 **💾 Ota varmuuskopio ennen ensimmäistä avausta uudemmalla versiolla!**
 
@@ -301,7 +301,7 @@ Tommi Helinevan sivuilta:
 
 ---
 
-**Versio:** 1.6.0-priku.1
+**Versio:** 1.6.1-priku.1
 **Java-versio:** 21+
 **Käännöstyökalu:** Maven 3.6+
-**Viimeisin päivitys:** 2025-12-29
+**Viimeisin päivitys:** 2026-01-01
